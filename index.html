@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+        <title></title>
+        <link href="./resource/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="./resource/css/common.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./resource/js/jquery-3.6.0.min.js"></script>
+    </head>
+    <body class="sideMenuOn">
+         <!-- left menu -->
+        <aside class="surface">
+            <figure class="surface-profile d-none">
+                <img src="./resource/images/@profile-sample.png" alt="" width="48" height="48">
+            </figure>
+            <div class="surface-icons">
+                <a class="home" href="javascript:;" data-toggle="tooltip" data-placement="right" title="대시보드"></a>
+                <a class="folder active" href="/voter" data-toggle="tooltip" data-placement="right" title="유권자관리"></a>
+                <a class="message" href="javascript:;" data-toggle="tooltip" data-placement="right" title="문자 발송"></a>
+                <a class="chart" href="javascript:;" data-toggle="tooltip" data-placement="right" title="통계"></a>
+                <a class="refuse" href="javascript:;" data-toggle="tooltip" data-placement="right" title="수신거부"></a>
+            </div>
+        </aside>
+        <!-- // left menu -->
+        <!-- contents-->
+        <div class="main-contents">
+            <!-- toast -->
+            <div class="toast" role="" aria-live="assertive" aria-atomic="true" style="opacity: 1;">
+                <div class="toast-body">
+                        <span class="text-secondary">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="7.5" cy="7.5" r="7" stroke="#008D8D"/>
+                                <path d="M4 7.5L6.33333 10L11 5" stroke="#008D8D" stroke-linecap="round"/>
+                            </svg>
+                            이 페이지에 있는 항목 3개가 선택되었습니다
+                        </span>
+                    <div class="button-wrap">
+                        <button type="button" class="btn btn-link text-primary text-bold">기본 항목 12,345개 모두 선택</button>
+                    </div>
+                </div>
+            </div>
+            <!-- // toast -->
+
+            <!-- toast alert -->
+            <div class="toast alret" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1;">
+                <div class="toast-body">
+                    <span class="text-bold text-danger">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.67888 8.90872L8.80574 3.20007H7.26821L7.39507 8.90872H8.67888ZM7.19971 11.4503C7.19971 11.9204 7.51368 12.2001 8.03888 12.2001C8.56027 12.2001 8.87361 11.9204 8.87361 11.4503C8.87361 10.9714 8.56027 10.6917 8.03888 10.6917C7.51305 10.6917 7.19971 10.9714 7.19971 11.4503Z" fill="#FA3945"/>
+                            <path d="M8.80574 3.20007L8.90572 3.20229L8.90799 3.10007H8.80574V3.20007ZM8.67888 8.90872V9.00872H8.77668L8.77886 8.91094L8.67888 8.90872ZM7.26821 3.20007V3.10007H7.16596L7.16824 3.20229L7.26821 3.20007ZM7.39507 8.90872L7.29509 8.91094L7.29727 9.00872H7.39507V8.90872ZM8.70576 3.19785L8.57891 8.9065L8.77886 8.91094L8.90572 3.20229L8.70576 3.19785ZM7.26821 3.30007H8.80574V3.10007H7.26821V3.30007ZM7.49504 8.9065L7.36819 3.19785L7.16824 3.20229L7.29509 8.91094L7.49504 8.9065ZM8.67888 8.80872H7.39507V9.00872H8.67888V8.80872ZM8.03888 12.1001C7.79322 12.1001 7.60977 12.0347 7.48894 11.9269C7.3696 11.8203 7.29971 11.662 7.29971 11.4503H7.09971C7.09971 11.7087 7.1868 11.9252 7.35575 12.0761C7.5232 12.2256 7.75934 12.3001 8.03888 12.3001V12.1001ZM8.77361 11.4503C8.77361 11.6621 8.70382 11.8205 8.58501 11.927C8.46477 12.0348 8.28246 12.1001 8.03888 12.1001V12.3001C8.31668 12.3001 8.55175 12.2255 8.71853 12.0759C8.88673 11.9251 8.97361 11.7086 8.97361 11.4503H8.77361ZM8.03888 10.7917C8.28247 10.7917 8.46456 10.857 8.58469 10.9656C8.70346 11.073 8.77361 11.2336 8.77361 11.4503H8.97361C8.97361 11.1882 8.88709 10.9694 8.71884 10.8173C8.55195 10.6663 8.31668 10.5917 8.03888 10.5917V10.7917ZM7.29971 11.4503C7.29971 11.2336 7.36984 11.0731 7.48904 10.9657C7.60966 10.8571 7.79287 10.7917 8.03888 10.7917V10.5917C7.75906 10.5917 7.52268 10.6662 7.35517 10.8172C7.18624 10.9693 7.09971 11.1881 7.09971 11.4503H7.29971Z" fill="#FA3945"/>
+                            <circle cx="8" cy="8" r="7.5" stroke="#FA3945"/>
+                        </svg>
+                        24개의 유효하지 않은 연락처가 있습니다
+                    </span>
+                    <div class="button-wrap">
+                        <button type="button" class="btn btn-link text-bold text-secondary">건너뛰기</button>
+                        <button type="button" class="btn btn-link text-danger text-bold" data-toggle="modal" data-target="#editContactModal">관리하기</button>
+                    </div>
+                </div>
+            </div>
+            <!-- // toast alert -->
+
+            <!-- toast badge -->
+            <div class="toast-badge">
+                <div class="toast-badge-body">
+                    <div>
+                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 6L5.33333 11L14 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-white text-center">
+                                <span class="ico-wrapper">아이템 병합
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto; animation-play-state: running; animation-delay: 0s;" width="80px" height="80px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                                        <g transform="rotate(0 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8888888888888888s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g><g transform="rotate(40 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.7777777777777778s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g><g transform="rotate(80 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g><g transform="rotate(120 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5555555555555556s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g><g transform="rotate(160 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4444444444444444s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g><g transform="rotate(200 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g><g transform="rotate(240 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.2222222222222222s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g><g transform="rotate(280 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.1111111111111111s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g><g transform="rotate(320 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                        <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+                                            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                        </rect>
+                                        </g>
+                                    </svg>
+                                </span>
+                            <span>완료!</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="ico-close"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- //toast badge -->
+            <div class="sticky-top-bg"></div>
+            <div class="sticky-left-bg"></div>
+            <div class="nav-wrap">
+                <div class="nav-tit">유권자 DB 관리</div>
+                <button class="nav-toggler" type="button">1231</button>
+                <div class="nav-sub bg-select"><!-- 선택 시 bg-select 클래스 추가 -->
+                    <a href="javascript:;">전체 DB 보기</a>
+                </div>
+                <div class="nav-group">
+                    <a class="group-add-button" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">추가</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item people" href="#" data-toggle="modal" data-target="#addGroupModal">새로운 그룹</a>
+                        <a class="dropdown-item folder" href="#">새 폴더</a>
+                    </div>
+
+                    <div class="group-item">
+                        <a class="" data-toggle="collapse" href="#folder_01" role="button" aria-expanded="false" aria-controls="folder_01">폴더 1</a>
+                        <div class="collapse" id="folder_01" >
+                            <div class="sortabled">
+                                <a class="item-link bg-select" href="javascript:;">그룹 A</a><!-- 선택 시 bg-select 클래스 추가 -->
+                                <a class="item-link" href="javascript:;">그룹 B</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <a class="" data-toggle="collapse" href="#folder_02" role="button" aria-expanded="false" aria-controls="folder_02">폴더 1</a>
+                        <div class="collapse" id="folder_02">
+                            <div class="sortabled">
+                                <a class="item-link" href="javascript:;">그룹 A</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrap">
+                <div class="content-header">
+                    <div class="header-contents">
+                        <h1 class="titDep1">전체 DB</h1><!-- 그룹 추가 시 hide -->
+                        <div class="holder" style="display: none;"><!-- 그룹 추가 시 show -->
+                            <input type="text" class="form-control" placeholder="새로운 그룹">
+                            <div class="menu-color-picker">
+                                <ul>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type01"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type02"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type03"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type04"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type05"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type06"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type07"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type08"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type09"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type10"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type11"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type12"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type13"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type14"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type15"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <span class="label-badge type16"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="text-secondary">12,345개 중 1-50</span>
+                    </div>
+                    <div class="slider">
+                        <button class="btn-range" data-dir="minus">-</button>
+                        <div id="storlekslider"></div>
+                        <button class="btn-range" data-dir="plus">+</button>
+                        <input type="text" name="storlek" id="storlek_testet" readonly value="75%">
+                    </div>
+                </div>
+                <div class="content-tools">
+                    <div class="tools-left">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">DB 일괄 등록</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item excel" href="#" data-toggle="modal" data-target="#addExcelModal">엑셀 일괄 등록</a>
+                                <a class="dropdown-item ocr" href="#">문서 자동 인식</a>
+                            </div>
+                        </div>
+                        <div class="btn-filter-wrap">
+                            <div class="filter-input">
+                                <input type="text" placeholder="검색">
+                                <svg class="filter-icons" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.4 1.60001C6.70261 1.60001 5.07475 2.27429 3.87452 3.47452C2.67428 4.67476 2 6.30262 2 8.00001C2 9.69739 2.67428 11.3253 3.87452 12.5255C5.07475 13.7257 6.70261 14.4 8.4 14.4C10.0974 14.4 11.7252 13.7257 12.9255 12.5255C14.1257 11.3253 14.8 9.69739 14.8 8.00001C14.8 6.30262 14.1257 4.67476 12.9255 3.47452C11.7252 2.27429 10.0974 1.60001 8.4 1.60001V1.60001Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M12.8916 12.8916L18.2 18.2" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+                                </svg>
+                                <a class="ico-close" href="javascript:;"></a>
+                                <div class="input-dropdown"><!-- input focus 시 show -->
+                                    <a role="button" href="javascript:;">이름</a>
+                                    <a role="button" href="javascript:;">주소</a>
+                                    <a role="button" href="javascript:;">휴대폰</a>
+                                    <a role="button" href="javascript:;">이메일</a>
+                                    <a role="button" href="javascript:;">생년월일</a>
+                                    <a role="button" href="javascript:;">소속</a>
+                                    <a role="button" href="javascript:;">출처</a>
+                                    <a role="button" href="javascript:;">접수자</a>
+                                </div>
+                            </div>
+                            <div class="filter-rule bg-select"><!-- 선택 시 bg-select 클래스 추가 -->
+                                <a  class="" role="button" data-toggle="modal" data-target="#filterhModal">
+                                    <svg class="filter-icons" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_714_248)">
+                                            <path d="M16.5604 2.15999L10.8004 8.27999V16.92L7.20043 14.76V8.27999L1.44043 2.15999V1.07999H16.5604V2.15999Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_714_248">
+                                                <rect width="18" height="18" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>필터</span>
+                                </a>
+                            </div>
+                            <div class="filter-error"><!-- 선택 시 bg-select 클래스 추가 -->
+                                <a class="" role="button" data-toggle="modal" data-target="#overlapSearchModal">
+                                    <svg class="filter-icons" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2 18H2V3.60001H13.2V18Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round"/>
+                                        <path d="M6.7998 2H17.9998V16.4H14.3998" stroke="black" stroke-miterlimit="10"/>
+                                        <path d="M7.59961 8V13.6" stroke="black" stroke-miterlimit="10"/>
+                                        <path d="M4.7998 10.8H10.3998" stroke="black" stroke-miterlimit="10"/>
+                                    </svg>
+                                    <span>중복</span>
+                                </a>
+                            </div>
+                            <div class="filter-overlab"><!-- 선택 시 bg-select 클래스 추가 -->
+                                <a class="" role="button" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <svg class="filter-icons" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.1516 9.25625L13.7516 8.65836C15.0641 9.4431 16.3766 9.59257 17.3891 8.58362C18.3266 7.6494 19.3391 5.44465 18.8891 4.09937L16.9016 6.07991C16.6391 6.34149 16.1891 6.34149 15.8891 6.07991L13.9016 4.09937C13.6391 3.83779 13.6391 3.38937 13.9016 3.09042L15.8891 1.10987C14.5766 0.661449 12.3266 1.6704 11.3891 2.60462C10.3766 3.61358 10.4891 4.95885 11.3141 6.22939L10.2641 7.27571M7.30156 10.3026L5.38906 12.2084C5.08906 12.1336 4.78906 12.0963 4.48906 12.0963C2.57656 12.0963 1.03906 13.6284 1.03906 15.5342C1.03906 17.44 2.57656 18.9721 4.48906 18.9721C6.40156 18.9721 7.93906 17.44 7.93906 15.5342C7.93906 15.1979 7.90156 14.8989 7.78906 14.6L9.21406 13.18M5.80156 16.8047L4.00156 17.2905L2.68906 15.9826L3.17656 14.2263L4.93906 13.7405L6.25156 15.0484L5.80156 16.8047Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 9.06943L4.525 3.6136L4.675 2.60464L1.9375 1.03516L1 1.96937L2.575 4.69729L3.5875 4.54782L9.0625 10.0036M18.4375 15.609L13.8625 11.05C13.525 10.7137 13.0375 10.6015 12.5875 10.6763L11.725 9.81681C11.95 9.55523 11.95 9.14417 11.6875 8.88259L11.425 8.62101C11.1625 8.35943 10.7125 8.35943 10.45 8.62101L8.6125 10.4521C8.35 10.7137 8.35 11.1621 8.6125 11.4237L8.875 11.6852C9.1375 11.9468 9.55 11.9468 9.8125 11.7226L10.675 12.5821C10.5625 13.0305 10.7125 13.5163 11.05 13.8526L15.625 18.4116C16.4125 19.1964 17.65 19.1964 18.4375 18.4116C19.1875 17.6269 19.1875 16.3563 18.4375 15.609Z" stroke="black" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>오류</span>
+                                    <span class="badge badge-danger">24</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools-right">
+                        <button type="button" class="btn btn-primary-lihgt">
+                            <span>엑셀로 다운로드</span>
+
+                            <svg class="icon-download" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_714_286)">
+                                    <path d="M11.8801 9.72L9.00012 12.6L6.12012 9.72M9.00012 2.5V12.1205" stroke="black" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M6.11988 6.12H2.87988V17.64H15.1199V6.12H11.8799" stroke="black" stroke-miterlimit="10" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_714_286">
+                                        <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <svg class="icon-spinner" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto; animation-play-state: running; animation-delay: 0s;" width="80px" height="80px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                                <g transform="rotate(0 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                    <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8888888888888888s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                    </rect>
+                                </g><g transform="rotate(40 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.7777777777777778s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                </rect>
+                            </g><g transform="rotate(80 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                </rect>
+                            </g><g transform="rotate(120 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5555555555555556s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                </rect>
+                            </g><g transform="rotate(160 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4444444444444444s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                </rect>
+                            </g><g transform="rotate(200 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                </rect>
+                            </g><g transform="rotate(240 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.2222222222222222s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                </rect>
+                            </g><g transform="rotate(280 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.1111111111111111s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                </rect>
+                            </g><g transform="rotate(320 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                                <rect x="47.5" y="38.5" rx="2.5" ry="2.5" width="5" height="5" fill="#000000" style="animation-play-state: running; animation-delay: 0s;">
+                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                                </rect>
+                            </g>
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="contents-table">
+                    <div class="table-wrap" id="tablesorter">
+                        <div class="table-header">
+                            <div class="table-cells-row-wrap">
+                                <div class="table-cells-row floting">
+                                    <div class="table-cells-pin">
+                                        <div class="form-check fix"></div>
+                                    </div>
+                                    <div class="table-cells-line"></div>
+                                    <div class="table-cells-checkbox table-ui">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="table-cells-tit table-ui">이름</div>
+                                </div>
+                                <div class="table-cells-row tr">
+                                    <div class="table-cells-tit table-ui th">그룹</div>
+                                    <div class="table-cells-tit table-ui width-80 th">지역구</div>
+                                    <div class="table-cells-tit table-ui th">당원</div>
+                                    <div class="table-cells-tit table-ui th">우호도</div>
+                                    <div class="table-cells-tit table-ui width-140 th">접수일</div>
+                                    <div class="table-cells-tit table-ui width-190 th">주소</div>
+                                    <div class="table-cells-tit table-ui width-100 th">행정동</div>
+                                    <div class="table-cells-tit table-ui width-155 th">휴대폰</div>
+                                    <div class="table-cells-tit table-ui width-208 th">이메일</div>
+                                    <div class="table-cells-tit table-ui width-155 th">생년월일</div>
+                                    <div class="table-cells-tit table-ui th">성별</div>
+                                    <div class="table-cells-tit table-ui th">소속</div>
+                                    <div class="table-cells-tit table-ui th">출처</div>
+                                    <div class="table-cells-tit table-ui th">접수자</div>
+                                    <div class="table-cells-tit table-ui width-80">
+                                        <a id="addColumnBtn" class="ico-add" href="javascript:;" data-toggle="tooltip" data-placement="top" title="컬럼 추가"></a>
+                                        <div class="add-column">
+                                            <div class="add-column-tit">
+                                                <span>컬럼 이름</span>
+                                                <a id="addColumnCloseBtn" class="ico-close" href="javascript:;"></a>
+                                            </div>
+                                            <input type="text" placeholder="새로운 컬럼">
+                                            <button class="text-primary">컬럼 추가</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-cells-row-wrap add-items-tools">
+                                <div class="table-cells-row floting add-items-row">
+                                    <div class="table-cells-pin">
+                                        <div class="form-check fix"></div>
+                                    </div>
+                                    <div class="table-cells-line"></div>
+                                    <div class="table-cells-checkbox table-ui" style="width: 33px">
+                                        <div class="form-check"></div>
+                                    </div>
+                                    <div class="table-cells-tit table-ui empty" style="width: 244px;">
+                                        <input class="add-item-input" type="text" placeholder="+ 새로 만들기">
+                                    </div>
+                                </div>
+                                <div class="table-cells-row tr">
+                                    <div class="table-cells-tit table-ui empty td"></div>
+                                    <div class="table-cells-tit table-ui empty width-80 td"></div>
+                                    <div class="table-cells-tit table-ui empty td"></div>
+                                    <div class="table-cells-tit table-ui empty td"></div>
+                                    <div class="table-cells-tit table-ui empty width-140 td"></div>
+                                    <div class="table-cells-tit table-ui empty width-190 td"></div>
+                                    <div class="table-cells-tit table-ui empty width-100 td"></div>
+                                    <div class="table-cells-tit table-ui empty width-155 td"></div>
+                                    <div class="table-cells-tit table-ui empty width-208 td"></div>
+                                    <div class="table-cells-tit table-ui empty width-155 td"></div>
+                                    <div class="table-cells-tit table-ui empty td"></div>
+                                    <div class="table-cells-tit table-ui empty td"></div>
+                                    <div class="table-cells-tit table-ui empty td"></div>
+                                    <div class="table-cells-tit table-ui empty width-80"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sortabled" id="tableSortable">
+                            <!-- 반복구간 시작 -->
+                            <div class="table-body">
+                                <div class="table-cells-row-wrap error-type">
+                                    <div class="table-cells-row floting">
+                                        <div class="table-cells-pin">
+                                            <div class="form-check fix">
+                                                <input type="checkbox" class="form-check-input" id="pinCheck1">
+                                                <label class="form-check-label" for="pinCheck1"></label>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-line"></div>
+                                        <div class="table-cells-checkbox table-ui">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2"></label>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="이름">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-cells-row tr">
+                                        <div class="table-cells-tit table-ui td" style="background-color: #037e01;">
+                                            <div class="dropdown group">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="text-white">후원자</span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <div class="menu-list select-mode">
+                                                        <a class="dropdown-item bg-success text-white" href="#">후원자</a>
+                                                        <a class="dropdown-item bg-danger-bright text-white" href="#">기자</a>
+                                                        <a class="dropdown-item bg-info text-white" href="#">유권자</a>
+                                                        <div class="menu-edit-button">
+                                                            <a class="dropdown-item bg-hover-gray" href="#">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.0005 2.43262C12.988 3.19554 12.7493 3.79191 12.2651 4.2791C11.2481 5.30185 10.2228 6.31631 9.20305 7.3363C7.6264 8.9112 6.05181 10.4889 4.47308 12.0617C4.4032 12.1308 4.30358 12.1895 4.20811 12.211C3.01472 12.4742 1.81925 12.7306 0.62448 12.987C0.235676 13.0706 -0.0708001 12.7417 0.0142938 12.3533C0.273035 11.1758 0.521398 9.99614 0.781523 8.8186C0.805045 8.71356 0.862466 8.60022 0.937874 8.52421C3.01679 6.44208 5.09917 4.36479 7.18225 2.28681C7.74262 1.72775 8.27601 1.13898 8.87167 0.620691C10.3356 -0.654293 12.5833 0.140412 12.9541 2.04356C12.9839 2.19628 12.9908 2.35315 12.9998 2.43331L13.0005 2.43262ZM7.6596 3.23078C7.6596 3.23078 7.63954 3.2446 7.6257 3.25842C5.68446 5.1975 3.74321 7.13658 1.80403 9.07774C1.75976 9.12197 1.72724 9.189 1.71341 9.25119C1.63177 9.6057 1.55636 9.96159 1.47957 10.3168C1.37165 10.8178 1.26511 11.3195 1.1558 11.8288C1.18901 11.8288 1.20976 11.8323 1.22844 11.8288C2.05724 11.6519 2.88742 11.4764 3.71484 11.2919C3.80893 11.2711 3.90509 11.2089 3.97427 11.1405C5.87401 9.24843 7.77029 7.35288 9.66865 5.45941C9.70877 5.41933 9.76204 5.39238 9.79802 5.3675C9.06815 4.63844 8.36595 3.93703 7.6596 3.23147V3.23078ZM10.5078 4.58178C10.8655 4.2328 11.2398 3.88106 11.5995 3.51411C12.31 2.7892 12.0333 1.49418 11.0855 1.12654C10.4788 0.890891 9.9177 0.987638 9.4445 1.44926C9.09167 1.7934 8.75199 2.15067 8.41715 2.49067C9.11658 3.19001 9.8167 3.89004 10.5078 4.58109V4.58178Z" fill="black"/>
+                                                                </svg>
+                                                                그룹 수정
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list edit-mode">
+                                                        <div class="menu-groups">
+                                                            <div class="edit-label">
+                                                                <a class="label-color-picker" href="#">
+                                                                    <span class="label-badge type09"></span>
+                                                                </a>
+                                                                <input class="" type="text" placeholder="그룹 추가" value="후원자">
+                                                                <a class="label-deleted" href="#" data-toggle="tooltip" data-placement="top" title="사용 중인 라벨은 삭제할 수 없습니다">
+                                                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M1 1L8 8" stroke="#62646D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                                                        <path d="M8 1L1 8" stroke="#62646D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="edit-label">
+                                                                <a class="bg-hover-gray blocked" href="#">+ 새로운 그룹</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menu-edit-apply text-center">
+                                                            <a href="#">적용하기</a>
+                                                        </div>
+                                                        <div class="menu-color-picker">
+                                                            <ul>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type01"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type02"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type03"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type04"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type05"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type06"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type07"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type08"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type09"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type10"></span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui width-80 td">
+                                            <div class="dropdown group size-sm">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="ico-circle"></span>
+                                                    <span class="ico-close"></span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <div class="flexed">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="ico-circle"></span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="ico-close"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui td">
+                                            <div class="dropdown group">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="">일반</span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <div class="menu-list">
+                                                        <a class="dropdown-item type01 text-white" href="#">책임권리</a>
+                                                        <a class="dropdown-item type02 text-white" href="#">일반</a>
+                                                        <a class="dropdown-item type03 text-white" href="#">비당원</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui td">
+                                            <div class="dropdown group size-sm">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span>A</span>
+                                                </a>
+                                                <div class="dropdown-menu auto-width">
+                                                    <div class="flexed">
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">A</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">B</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">C</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">D</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">F</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-140 td">
+                                            <div class="input-wrap">
+                                                <input type="text" class="datepicker" value="2022/10/13">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-190 td">
+                                            <div class="input-wrap">
+                                                <input type="text" value="서울시 강북구 수유동">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-100 td">
+                                            <div class="input-wrap">
+                                                <input type="text" value="망원동">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-155 td">
+                                            <div class="input-wrap">
+                                                <input type="text" value="010-1111-1111" class="text-danger"><!-- text-danger 클래스 추가 -->
+                                                <span class="icon-info"></span>
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-208 td">
+                                            <div class="input-wrap">
+                                                <input type="text" value="abd@naver.com">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-155 td">
+                                            <div class="input-wrap">
+                                                <input type="text" class="datepicker" id="datepicker2" value="2022/10/13">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui td">
+                                            <div class="dropdown group size-sm">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span>남</span>
+                                                </a>
+                                                <div class="dropdown-menu auto-width">
+                                                    <div class="flexed">
+                                                        <div class="dropdown-item">
+                                                            <a class="square" href="#">
+                                                                <span class="text-15 text-bold">남</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item" href="#">
+                                                            <a class="square" href="#">
+                                                                <span class="text-15 text-bold">여</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item" href="#">
+                                                            <a class="square" href="#">
+                                                                <span class="text-15 text-bold">모름</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input td">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="">
+                                                <span class="add-item">추가</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input td">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="">
+                                                <span class="add-item">추가</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input td">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="">
+                                                <span class="add-item">추가</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-80 td">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="">
+                                                <span class="add-item">추가</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // 반복구간 종료 -->
+
+                            <!-- 반복구간 시작 -->
+                            <div class="table-body">
+                                <div class="table-cells-row-wrap">
+                                    <div class="table-cells-row floting">
+                                        <div class="table-cells-pin">
+                                            <div class="form-check fix">
+                                                <input type="checkbox" class="form-check-input" id="pinCheck2">
+                                                <label class="form-check-label" for="pinCheck2"></label>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-line"></div>
+                                        <div class="table-cells-checkbox table-ui">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                                                <label class="form-check-label" for="exampleCheck3"></label>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="이름">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-cells-row tr">
+                                        <div class="table-cells-tit table-ui td" style="background-color: #037e01;">
+                                            <div class="dropdown group">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="text-white">후원자</span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <div class="menu-list">
+                                                        <a class="dropdown-item bg-success text-white" href="#">후원자</a>
+                                                        <a class="dropdown-item bg-danger-bright text-white" href="#">기자</a>
+                                                        <a class="dropdown-item bg-info text-white" href="#">유권자</a>
+                                                        <div class="menu-edit-button">
+                                                            <a class="dropdown-item bg-hover-gray" href="#">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.0005 2.43262C12.988 3.19554 12.7493 3.79191 12.2651 4.2791C11.2481 5.30185 10.2228 6.31631 9.20305 7.3363C7.6264 8.9112 6.05181 10.4889 4.47308 12.0617C4.4032 12.1308 4.30358 12.1895 4.20811 12.211C3.01472 12.4742 1.81925 12.7306 0.62448 12.987C0.235676 13.0706 -0.0708001 12.7417 0.0142938 12.3533C0.273035 11.1758 0.521398 9.99614 0.781523 8.8186C0.805045 8.71356 0.862466 8.60022 0.937874 8.52421C3.01679 6.44208 5.09917 4.36479 7.18225 2.28681C7.74262 1.72775 8.27601 1.13898 8.87167 0.620691C10.3356 -0.654293 12.5833 0.140412 12.9541 2.04356C12.9839 2.19628 12.9908 2.35315 12.9998 2.43331L13.0005 2.43262ZM7.6596 3.23078C7.6596 3.23078 7.63954 3.2446 7.6257 3.25842C5.68446 5.1975 3.74321 7.13658 1.80403 9.07774C1.75976 9.12197 1.72724 9.189 1.71341 9.25119C1.63177 9.6057 1.55636 9.96159 1.47957 10.3168C1.37165 10.8178 1.26511 11.3195 1.1558 11.8288C1.18901 11.8288 1.20976 11.8323 1.22844 11.8288C2.05724 11.6519 2.88742 11.4764 3.71484 11.2919C3.80893 11.2711 3.90509 11.2089 3.97427 11.1405C5.87401 9.24843 7.77029 7.35288 9.66865 5.45941C9.70877 5.41933 9.76204 5.39238 9.79802 5.3675C9.06815 4.63844 8.36595 3.93703 7.6596 3.23147V3.23078ZM10.5078 4.58178C10.8655 4.2328 11.2398 3.88106 11.5995 3.51411C12.31 2.7892 12.0333 1.49418 11.0855 1.12654C10.4788 0.890891 9.9177 0.987638 9.4445 1.44926C9.09167 1.7934 8.75199 2.15067 8.41715 2.49067C9.11658 3.19001 9.8167 3.89004 10.5078 4.58109V4.58178Z" fill="black"/>
+                                                                </svg>
+                                                                그룹 수정
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list edit-mode">
+                                                        <div class="menu-groups">
+                                                            <div class="edit-label">
+                                                                <a class="label-color-picker" href="#">
+                                                                    <span class="label-badge type09"></span>
+                                                                </a>
+                                                                <input class="" type="text" placeholder="그룹 추가" value="후원자">
+                                                                <a class="label-deleted" href="#" data-toggle="tooltip" data-placement="top" title="사용 중인 라벨은 삭제할 수 없습니다">
+                                                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M1 1L8 8" stroke="#62646D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                                                        <path d="M8 1L1 8" stroke="#62646D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="edit-label">
+                                                                <a class="bg-hover-gray blocked" href="#">+ 새로운 그룹</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menu-edit-apply text-center">
+                                                            <a href="#">적용하기</a>
+                                                        </div>
+                                                        <div class="menu-color-picker">
+                                                            <ul>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type01"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type02"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type03"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type04"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type05"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type06"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type07"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type08"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type09"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="" href="#">
+                                                                        <span class="label-badge type10"></span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui width-80 td">
+                                            <div class="dropdown group size-sm">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="ico-circle"></span>
+                                                    <span class="ico-close"></span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <div class="flexed">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="ico-circle"></span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="ico-close"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui td">
+                                            <div class="dropdown group">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="">일반</span>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <div class="menu-list">
+                                                        <a class="dropdown-item type01 text-white" href="#">책임권리</a>
+                                                        <a class="dropdown-item type02 text-white" href="#">일반</a>
+                                                        <a class="dropdown-item type03 text-white" href="#">비당원</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui td">
+                                            <div class="dropdown group size-sm">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span>A</span>
+                                                </a>
+                                                <div class="dropdown-menu auto-width">
+                                                    <div class="flexed">
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">A</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">B</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">C</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">D</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <a href="#">
+                                                                <span class="text-15 text-bold">F</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-140 td">
+                                            <div class="input-wrap">
+                                                <input type="text" class="datepicker" value="2022/10/13">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-190 td">
+                                            <div class="input-wrap">
+                                                <input type="text" value="서울시 강북구 수유동">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-100 td">
+                                            <div class="input-wrap">
+                                                <input type="text" value="망원동">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-155 td">
+                                            <div class="input-wrap">
+                                                <input type="text" value="010-1111-1111">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-208 td">
+                                            <div class="input-wrap">
+                                                <input type="text" value="abd@naver.com">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-155 td">
+                                            <div class="input-wrap">
+                                                <input type="text" id="datepicker2" value="2022/10/13">
+                                                <a class="btn-deleted" href="javascript:;">닫기</a>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui td">
+                                            <div class="dropdown group size-sm">
+                                                <a class="blocked" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span>남</span>
+                                                </a>
+                                                <div class="dropdown-menu auto-width">
+                                                    <div class="flexed">
+                                                        <div class="dropdown-item">
+                                                            <a class="square" href="#">
+                                                                <span class="text-15 text-bold">남</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item" href="#">
+                                                            <a class="square" href="#">
+                                                                <span class="text-15 text-bold">여</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="dropdown-item" href="#">
+                                                            <a class="square" href="#">
+                                                                <span class="text-15 text-bold">모름</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="status-note-wrapper">
+                                                <div class="status-print-color">
+                                                    <div class="add-status-note"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input td">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="">
+                                                <span class="add-item">추가</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input td">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="">
+                                                <span class="add-item">추가</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input td">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="">
+                                                <span class="add-item">추가</span>
+                                            </div>
+                                        </div>
+                                        <div class="table-cells-tit table-ui table-edit-input width-80">
+                                            <div class="input-wrap">
+                                                <input type="text" placeholder="">
+                                                <span class="add-item">추가</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // 반복구간 종료 -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 아이템 선택 시 노출 -->
+                <div class="contents-selector">
+                    <div class="text-white">3</div>
+                    <div class="actions-item-wrap">
+                        <div class="actions-title">
+                            <div class="tit">선택된 항목</div>
+                            <div class="dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="actions-item">
+                            <div class="item-icons">
+                                <a href="javascript:;">
+                                        <span class="ico">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.90625 4.77445L10.5 1.18074L14.0937 4.77445M10.5 14.1165L10.5 1.40509" stroke="black" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                                <path d="M16.16 8.05435L20.2024 8.05435L20.2024 20.1816L0.798828 20.1816L0.798828 8.05435L4.84125 8.05435" stroke="black" stroke-width="1.2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    <span>내보내기</span>
+                                </a>
+                                <a href="javascript:;">
+                                        <span class="ico">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.00833 3.85L16.9917 17.15M10.5 1C9.25244 1 8.0171 1.24572 6.86451 1.72314C5.71191 2.20056 4.66464 2.90033 3.78249 3.78249C2.90033 4.66464 2.20056 5.71191 1.72314 6.86451C1.24572 8.0171 1 9.25244 1 10.5C1 11.7476 1.24572 12.9829 1.72314 14.1355C2.20056 15.2881 2.90033 16.3354 3.78249 17.2175C4.66464 18.0997 5.71191 18.7994 6.86451 19.2769C8.0171 19.7543 9.25244 20 10.5 20C11.7476 20 12.9829 19.7543 14.1355 19.2769C15.2881 18.7994 16.3354 18.0997 17.2175 17.2175C18.0997 16.3354 18.7994 15.2881 19.2769 14.1355C19.7543 12.9829 20 11.7476 20 10.5C20 9.25244 19.7543 8.0171 19.2769 6.86451C18.7994 5.71191 18.0997 4.66464 17.2175 3.78249C16.3354 2.90033 15.2881 2.20056 14.1355 1.72314C12.9829 1.24572 11.7476 1 10.5 1Z" stroke="black" stroke-width="1.3" stroke-miterlimit="10"/>
+                                            </svg>
+                                        </span>
+                                    <span>수신거부</span>
+                                </a>
+                                <a href="javascript:;">
+                                        <span class="ico">
+                                            <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.14706 3.79727V2.11891C7.14706 1.50127 7.64776 1 8.26471 1H12.7353C13.3522 1 13.8529 1.50127 13.8529 2.11891V3.79727M18.8824 3.79727L16.8186 22.1194C16.775 22.6078 16.3503 23 15.8692 23H5.13026C4.64968 23 4.22441 22.6078 4.18082 22.1194L2.11765 3.79727M1 3.79727H20M10.5 6.59455V20.2027M13.8529 6.59455V20.2027M7.14706 6.59455V20.2027" stroke="black" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                            </svg>
+                                        </span>
+                                    <span>삭제</span>
+                                </a>
+                                <a href="javascript:;">
+                                        <span class="ico">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.5435 0.944543V0.500093C16.0375 0.523603 20.5 5.00102 20.5 10.5C20.5 16.0135 16.0139 20.5 10.5 20.5C5.00059 20.5 0.523603 16.037 0.500093 10.5435H0.944543H10.0435H10.5435V10.0435V0.944543Z" fill="black" stroke="black"/>
+                                            </svg>
+                                        </span>
+                                    <span>애널리틱스</span>
+                                </a>
+                                <a href="javascript:;">
+                                        <span class="ico">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 12.5V21H1V1H10V9.5" stroke="black" stroke-width="1.1" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                                <path d="M15.6663 8L18 11L15.6663 14M5 11L17.7919 11" stroke="black" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round"/>
+                                                <path d="M13 9.5V1H21V21H13V12.5" stroke="black" stroke-width="1.1" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    <span>보드이동</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ico-close-wrap">
+                        <a class="ico-close" href="javascript:;"></a>
+                    </div>
+                </div>
+                <!-- // 아이템 선택 시 노출 -->
+
+                <div class="contents-footer">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link arrow double" href="#" aria-label="Previous"></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link arrow" href="#" aria-label="Previous"></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link active" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link arrow" href="#" aria-label="Next"></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link arrow double" href="#" aria-label="Next"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+        <!-- // contents -->
+
+
+        <!-- 연락처 정보 수정 모달 -->
+        <div class="modal fade" id="editContactModal" tabindex="-1" role="dialog" aria-labelledby="editContactModal" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="ico-close" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>유권자 연락처 정보를 수정하세요</h2>
+                        <p>24개의 유효하지 않은 연락처가 발견됨</p>
+                        <div class="modal-table">
+                            <div>
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-danger">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn-link text-secondary" data-dismiss="modal">나중에 하기</button>
+                        <button type="button" class="btn btn-lg btn-primary">수정하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 연락처 정보 수정 모달 -->
+
+        <!-- 그룹 생성 모달 -->
+        <div class="modal fade" id="addGroupModal" tabindex="-1" aria-labelledby="addGroupModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">그룹 생성하기</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="ico-close" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group no-margin">
+                                <label for="message-text" class="col-form-label" >그룹 이름</label>
+                                <input type="text" class="form-control" placeholder="새로운 그룹">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer no-border">
+                        <button type="button" class="btn btn-lg btn-link text-secondary" data-dismiss="modal">취소</button>
+                        <button type="button" class="btn btn-lg btn-primary">수정하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 그룹 생성 모달 -->
+
+        <!-- 엑셀 일괄 등록 모달 -->
+        <div class="modal fade" id="addExcelModal" tabindex="-1" aria-labelledby="addExcelModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-left">
+
+                            <!-- step 1 -->
+                            <div class="left-contents-wrap">
+                                <p class="steps">전체 2단계 중 <span>1</span></p>
+                                <h2 class="modal-title">엑셀에서 데이터 가져오기</h2>
+                                <div class="sub-title">엑셀 시트의 유권자 DB 정보를 딥시로 가져오세요</div>
+                                <div class="tools-area">
+                                    <p>여기로 파일을 드래그하거나 <a class="text-primary" href="javascript:;">클릭하여 찾아보기</a></p>
+                                    <p>모든 .csv, .xlsx, .xls 파일 형식이 지원됩니다</p>
+                                </div>
+                                <div class="tools-footer">
+                                    <p>시작하는데 도움이 필요하신가요?</p>
+                                    <p><a class="text-primary" href="javascript:;">다운로드</a> 샘플 Excel 파일 </p>
+                                </div>
+                            </div>
+                            <!-- // step 1 -->
+
+                            <!-- step 2 -->
+                            <div class="left-contents-wrap">
+                                <p class="steps">전체 2단계 중 <span>1</span></p>
+                                <h2 class="modal-title">엑셀에 있는 컬럼을<br/>딥시 보드의 컬럼에 매칭합니다</h2>
+                                <div class="sub-title">
+                                    <div class="form-check form-check-inline txt">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">가져오기에서 스프레드시트의 첫 번째 행 제외</label>
+                                    </div>
+                                </div>
+                                <div class="tools-column">
+                                    <div>
+                                        <div class="text-16">Excel 컬럼</div>
+                                        <div class="text-16">기존 보드 컬럼</div>
+                                    </div>
+
+                                    <!-- 반복 구간 시작 -->
+                                    <div>
+                                        <div class="text-16">
+                                            컬럼 1<span class="text-16 blocked text-secondary">회사 이름</span>
+                                        </div>
+                                        <div>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">컬럼 선택하기</button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">이름</a>
+                                                    <a class="dropdown-item" href="#">그룹</a>
+                                                    <a class="dropdown-item" href="#">지역구</a>
+                                                    <a class="dropdown-item" href="#">당원</a>
+                                                    <a class="dropdown-item" href="#">우호도</a>
+                                                    <a class="dropdown-item" href="#">접수일</a>
+                                                    <a class="dropdown-item" href="#">주소</a>
+                                                    <a class="dropdown-item" href="#">행정동</a>
+                                                    <a class="dropdown-item" href="#">휴대폰</a>
+                                                    <a class="dropdown-item" href="#">이메일</a>
+                                                    <a class="dropdown-item" href="#">생년월일</a>
+                                                    <a class="dropdown-item" href="#">소속</a>
+                                                    <a class="dropdown-item" href="#">출처</a>
+                                                    <a class="dropdown-item" href="#">접수자</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- // 반복 구간 종료 -->
+
+
+                                </div>
+                                <div class="tools-footer">
+                                    <p>시작하는데 도움이 필요하신가요?</p>
+                                    <p><a class="text-primary" href="javascript:;">다운로드</a> 샘플 Excel 파일 </p>
+                                </div>
+                            </div>
+                            <!-- // step 2 -->
+
+                            <div class="left-footer-button">
+
+                                <!-- step 2에서만 노출 -->
+                                <div>
+                                    <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_714_2605)">
+                                            <path d="M31.0004 22.9708C30.8165 23.5978 30.7181 24.2667 30.4326 24.8446C29.4043 26.9287 27.6698 27.981 25.3285 27.9897C21.024 28.0071 16.7194 27.9945 12.4157 27.9945C10.1679 27.9945 7.9201 27.9976 5.67229 27.9937C3.90906 27.9905 2.40732 27.3762 1.3054 25.9981C-0.0891872 24.2548 -0.414644 22.2956 0.572123 20.2874C1.39736 18.6082 2.41611 17.0206 3.3613 15.399C5.78983 11.2324 8.22876 7.07213 10.6557 2.90475C11.5409 1.38516 12.8156 0.426926 14.5732 0.087748C16.5659 -0.297287 18.9177 0.602445 19.986 2.30545C21.1319 4.13259 22.1962 6.00953 23.2854 7.87067C25.5252 11.6965 27.7514 15.5302 29.9984 19.3521C30.4998 20.2052 30.87 21.0939 31.002 22.0735V22.9708H31.0004ZM15.4808 25.5269C18.7362 25.5269 21.9907 25.5388 25.2461 25.5143C25.7371 25.5103 26.2649 25.4265 26.7103 25.2328C28.3775 24.5054 28.9725 22.5723 28.0537 20.9784C27.0469 19.232 26.0234 17.4942 25.007 15.7532C22.7472 11.8831 20.4858 8.01377 18.23 4.14128C17.8461 3.4819 17.348 2.96088 16.6179 2.67942C15.34 2.18686 13.7048 2.58692 12.8283 4.10413C10.2519 8.56404 7.63782 13.0018 5.04056 17.4499C4.30569 18.7086 3.54522 19.953 2.85672 21.2362C2.32335 22.2292 2.42491 23.2444 3.04144 24.1868C3.66517 25.1395 4.59356 25.5293 5.71707 25.5293C8.97244 25.5277 12.227 25.5293 15.4824 25.5293L15.4808 25.5269Z" fill="#008D8D"/>
+                                            <path d="M17.0849 10.5573C16.9642 12.609 16.8419 14.6954 16.7195 16.7819C16.7027 17.0697 16.7155 17.3614 16.6675 17.6437C16.5716 18.205 16.0854 18.5932 15.5192 18.598C14.9347 18.6027 14.4261 18.2193 14.3597 17.6326C14.2686 16.823 14.2406 16.0055 14.1894 15.192C14.0911 13.6321 14.0047 12.0721 13.8959 10.513C13.816 9.36742 14.6476 8.48034 15.7111 8.60525C16.4444 8.69143 17.0234 9.28282 17.0833 10.0149C17.0969 10.1826 17.0857 10.3533 17.0857 10.5573H17.0849Z" fill="#008D8D"/>
+                                            <path d="M15.4816 22.8127C14.602 22.7905 13.9127 22.0711 13.9351 21.1998C13.9567 20.3538 14.6892 19.6636 15.5488 19.6802C16.4236 19.6968 17.0993 20.4203 17.0713 21.3105C17.0449 22.158 16.3301 22.834 15.4824 22.8127H15.4816Z" fill="#008D8D"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_714_2605">
+                                                <rect width="31" height="28" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>맵핑되지 않은 컬럼은 가져오지 않습니다</span>
+                                </div>
+                                <!-- // step 2에서만 노출 -->
+
+                                <button type="button" class="btn btn-lg btn-primary">다음</button>
+                            </div>
+                        </div>
+                        <div class="modal-right holder">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="ico-close" aria-hidden="true"></span>
+                            </button>
+                            <div class="right-contents-wrap">
+                                <figure>
+                                    <img src="./resource/images/@excel-sample01.png" width="100%" alt="">
+                                    <img src="./resource/images/@excel-sample02.png" width="100%" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer no-border">
+                        <button type="button" class="btn btn-lg btn-link text-secondary" data-dismiss="modal">취소</button>
+                        <button type="button" class="btn btn-lg btn-primary">수정하기</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- // 엑셀 일괄 등록 모달 -->
+
+        <!-- Progress 모달 -->
+        <div class="modal fade" id="addExcelProgressModal" tabindex="-1" aria-labelledby="addExcelProgressModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header no-border">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="ico-close" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="modal-title">데이터를 가져오는 중입니다</h2>
+                        <div class="sub-title">걱정하지 마세요, 이 창을 닫아도 작업은 진행됩니다</div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Progress 모달 -->
+
+        <!-- 엑셀 업로드 완료 모달 -->
+        <div class="modal fade" id="addExcelUploadModal" tabindex="-1" aria-labelledby="addExcelUploadModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header no-border">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="ico-close" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="36" cy="36" r="36" fill="#008D8D"/>
+                            <path d="M21 38L33.4 51L52 25" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="help-block">파일이 성공적으로 업로드되었습니다</div>
+                        <button class="btn btn-primary-lihgt text-primary">
+                            <span>dnodb.xls</span>
+                            <a href="javascript:;">
+                                <span class="ico-close" aria-hidden="true"></span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 엑셀 업로드 완료 모달 -->
+
+        <!-- 중복 검색 모달 -->
+        <div class="modal fade" id="overlapSearchModal" tabindex="-1" role="dialog" aria-labelledby="overlapSearchModal" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+
+                <!-- step 1 -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="ico-close" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h2 class="modal-title">중복 검색</h2>
+                        <div class="sub-title">중복된 유권자 DB를 연락처 기준으로 검색합니다</div>
+                        <figure>
+                            <img src="./resource/images/@overlap-sample01.png" width="100%" alt="">
+                        </figure>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn-primary">검색</button>
+                    </div>
+                </div>
+                <!-- // step 1 -->
+
+                <!-- step 2 -->
+                <div class="modal-content step02">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="ico-close" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h2 class="modal-title">남겨둘 유권자 DB를 선택하세요</h2>
+                        <div class="text-primary text-18 text-extra-bold">2 중복 사항 발견됨</div>
+                        <div class="sub-title">모든 아이템의 업데이트는 선택한 아이템에 복제됩니다</div>
+                        <div class="modal-table">
+                            <div>
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-80">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                                            <label class="form-check-label" for="exampleCheck4"></label>
+                                        </div>
+                                    </div>
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-primary">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-80">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                                            <label class="form-check-label" for="exampleCheck5"></label>
+                                        </div>
+                                    </div>                                <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-primary">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                            </div>
+                            <div>
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-80">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck6">
+                                            <label class="form-check-label" for="exampleCheck6"></label>
+                                        </div>
+                                    </div>
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-primary">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+
+                                <!-- 반복 구간 시작 -->
+                                <div class="repeat-area">
+                                    <div class="width-80">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck7">
+                                            <label class="form-check-label" for="exampleCheck7"></label>
+                                        </div>
+                                    </div>
+                                    <div class="width-120">고길동</div>
+                                    <div class="width-190">후원자</div>
+                                    <div class="width-155">삼성동</div>
+                                    <div class="width-155 text-primary">
+                                        <input class="text-center" type="text" value="010-1111-1111">
+                                    </div>
+                                    <div class="width-208">huimin0529@gmail.com</div>
+                                </div>
+                                <!-- // 반복 구간 종료 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn-link text-secondary">뒤로 가기</button>
+                        <button type="button" class="btn btn-lg btn-primary">DB 합치기</button>
+                    </div>
+                </div>
+                <!-- // step 2 -->
+            </div>
+        </div>
+        <!-- // 중복 검색 모달 -->
+
+        <!-- filter 모달 -->
+        <div class="modal fade" id="filterhModal" tabindex="-1" aria-labelledby="filterhModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header no-border">
+                        <h2 class="modal-title">필터</h2>
+                        <div>
+                            <button type="button" class="btn btn-link text-secondary">조건 모두 지우기</button>
+                            <button type="button" class="btn btn-primary width-80">저장</button>
+
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="frmBox-wrap">
+                            <div class="width-120">
+                                <div class="text-12 text-secondary text-center">그룹</div>
+                                <ul class="frmBox frmDot">
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample01" name="chkSample">
+                                        <label for="chkSample01">경차/소형</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample02" name="chkSample">
+                                        <label for="chkSample02">준준형</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample03" name="chkSample">
+                                        <label for="chkSample03">중형/대형</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample04" name="chkSample">
+                                        <label for="chkSample04">SUB/승합</label>
+                                    </li>
+                                    <li>
+                                        <input type="text" placeholder="입력">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="width-80">
+                                <div class="text-12 text-secondary text-center">지역구</div>
+                                <ul class="frmBox">
+                                    <li>
+                                        <input type="checkbox" id="chkSample21" name="chkSample2">
+                                        <label class="text-center" for="chkSample21">
+                                            <span class="ico-circle"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample22" name="chkSample2">
+                                        <label class="text-center" for="chkSample22">
+                                            <span class="ico-close"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="width-120">
+                                <div class="text-12 text-secondary text-center">당원</div>
+                                <ul class="frmBox">
+                                    <li>
+                                        <input type="checkbox" id="chkSample31" name="chkSample3">
+                                        <label class="text-center" for="chkSample31">책임권리</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample32" name="chkSample3">
+                                        <label class="text-center" for="chkSample32">일반</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample33" name="chkSample3">
+                                        <label class="text-center" for="chkSample33">비당원</label>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="width-120">
+                                <div class="text-12 text-secondary text-center">우호도</div>
+                                <ul class="frmBox">
+                                    <li>
+                                        <input type="checkbox" id="chkSample41" name="chkSample4">
+                                        <label class="text-center" for="chkSample41">A</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample42" name="chkSample4">
+                                        <label class="text-center" for="chkSample42">B</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample43" name="chkSample4">
+                                        <label class="text-center" for="chkSample43">C</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample44" name="chkSample4">
+                                        <label class="text-center" for="chkSample44">D</label>
+                                    </li>
+                                    <li>
+                                        <span class="dot"></span>
+                                        <input type="checkbox" id="chkSample45" name="chkSample4">
+                                        <label class="text-center" for="chkSample45">F</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="width-120">
+                                <div class="text-12 text-secondary text-center">행정동</div>
+                                <ul class="frmBox">
+                                    <li>
+                                        <input type="checkbox" id="chkSample51" name="chkSample5">
+                                        <label for="chkSample51">쌍문동</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="chkSample52" name="chkSample5">
+                                        <label for="chkSample52">창동</label>
+                                    </li>
+                                    <li>
+                                        <input type="text" placeholder="입력">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- // filter 모달 -->
+
+    <script type="text/javascript" src="./resource/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./resource/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./resource/js/jquery.dragtable.js"></script>
+    <script type="text/javascript" src="./resource/js/common.js"></script>
+
+    </body>
+</html>

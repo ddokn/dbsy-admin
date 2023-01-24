@@ -1,0 +1,45 @@
+$font-url:"../fonts";
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Neo Bold'),
+    url(#{$font-url}/SpoqaHanSansNeo-Bold.woff2) format('woff2'),
+    url(#{$font-url}/SpoqaHanSansNeo-Bold.woff) format('woff'),
+    url(#{$font-url}/SpoqaHanSansNeo-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 500;
+    src: local('Spoqa Han Sans Neo Medium'),
+    url(#{$font-url}/SpoqaHanSansNeo-Medium.woff2) format('woff2'),
+    url(#{$font-url}/SpoqaHanSansNeo-Medium.woff) format('woff'),
+    url(#{$font-url}/SpoqaHanSansNeo-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Neo Regular'),
+    url(#{$font-url}/SpoqaHanSansNeo-Regular.woff2) format('woff2'),
+    url(#{$font-url}/SpoqaHanSansNeo-Regular.woff) format('woff'),
+    url(#{$font-url}/SpoqaHanSansNeo-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Neo Light'),
+    url(#{$font-url}/SpoqaHanSansNeo-Light.woff2) format('woff2'),
+    url(#{$font-url}/SpoqaHanSansNeo-Light.woff) format('woff'),
+    url(#{$font-url}/SpoqaHanSansNeo-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Neo Thin'),
+    url(#{$font-url}/SpoqaHanSansNeo-Thin.woff2) format('woff2'),
+    url(#{$font-url}/SpoqaHanSansNeo-Thin.woff) format('woff'),
+    url(#{$font-url}/SpoqaHanSansNeo-Thin.ttf) format('truetype');
+}

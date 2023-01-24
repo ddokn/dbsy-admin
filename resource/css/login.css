@@ -1,0 +1,116 @@
+body{
+    background: #F8F8FB;
+}
+
+.login_container{
+    margin-top: 233px;
+    text-align: center;
+}
+
+.login_container .title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+}
+.login_container .sub_title{
+    margin-top: 27px;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    color: #62646D;
+}
+
+.login_container .value_input input{
+    margin-top: 27px;
+    background: #FFFFFF;
+    border: 1px solid #008D8D;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 420px;
+    text-align: left;
+    padding:  13px 22px;
+    font-size: 18px;
+
+}
+.login_container .value_input input::placeholder{
+    color: #62646D;
+}
+
+.login_container .step_btn{
+    margin-top: 27px;
+}
+.login_container .step_btn a{
+    font-weight: 400;
+    width: 420px;
+    height: 48px;
+    background: #008D8D;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+
+.login_container .join_title{
+    margin-top: 102px;
+}
+
+.login_container .join_title span{
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.login_container .join_title a{
+    margin-left: 10px;
+    color: #008D8D;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.login_container .exist_id{
+    margin-top: 102px;
+}
+
+
+.login_container .login_id.s2{
+    margin-top: 42px;
+}
+
+.login_container .login_id span{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.login_container .login_id a{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    background: #F8F8FB;
+    border-radius: 32px;
+    height: 48px;
+    padding-top: 8px;
+    border: 1px solid #D0D1D4;
+}
+
+.login_container .exist_id a{
+    border: 1px solid #008D8D;
+}
+
+.login_container .login_id.s2{
+    margin-top: 37px;
+}
+
+
+.login_container .find_password{
+    margin-top: 50px;
+}
+
+.login_container .find_password a{
+    color: #008D8D;
+    font-weight: 400;
+    font-size: 18px;
+}
+

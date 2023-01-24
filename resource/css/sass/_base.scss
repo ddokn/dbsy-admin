@@ -1,0 +1,54 @@
+$body_color:#FFF;
+//color
+$color-default: #000;
+$color-black: #282C38;
+$color-secondary: #62646D;
+$color-white: #FFF;
+$color-primary: #008D8D;
+$color-primary-dark: #005151;
+$color-select: #D4FF84;
+$color-info: #057CE2;
+$color-success: #037E01;
+$color-danger: #FA3945;
+$color-danger-bright: #FF1C7D;
+$color-gray: #F8F8FB;
+$color-gray-dark: #E9EBF0;
+$color-border: #D0D1D4;
+
+//font
+$default_font :Spoqa Han Sans Neo, -apple-system, BlinkMacSystemFont, Open Sans, Helvetica Neue, sans-serif;
+$weight400:400;
+$weight500:500;
+$weight600:600;
+$weight700:700;
+$weight900:900;
+
+//extent 
+%hidden{overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px !important;clip:rect(0 0 0 0)}
+%textHidden{overflow:hidden;text-indent:-9999px}
+
+//url
+$img_url:"/resource/images";
+
+//mixin
+$font-body: 10px; 
+
+@function rem($val) { 
+    @return $val/$font-body * 1rem;
+}
+@mixin font($size,$color,$weight){
+    font-size:$size;
+    color:$color;
+    font-weight:$weight;
+}
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+@mixin cover($height) {
+    height: $height;
+    object-fit: cover;
+}

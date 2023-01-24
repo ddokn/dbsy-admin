@@ -1,0 +1,106 @@
+body{
+    background: #F8F8FB;
+}
+.container{
+    text-align: center;
+}
+.join_container{
+    margin-top: 233px;
+    text-align: center;
+    max-width: 450px;
+    display: inline-block;
+}
+
+.join_container .title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+}
+
+
+.join_container .input_group{
+    text-align: left;
+}
+.join_container .input_group label{
+    font-weight: 400;
+    font-size: 18px;
+}
+.join_container .input_group input{
+    background: #FFFFFF;
+    border: 1px solid #D0D1D4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    padding:  10px 18px;
+    font-size: 18px;
+    width: 420px;
+}
+.join_container .input_group input:focus{
+    border: 1px solid #008D8D;
+}
+
+
+.join_container .input_group input::placeholder{
+    color: #62646D;
+}
+
+
+.join_container .l1{
+    margin-top: 43px;
+}
+.join_container .l1 .input_group{
+    display: inline-block;
+}
+.join_container .l1 .input_group:first-child{
+    margin-right: 10px;
+}
+.join_container .l1 label{
+    display: block;
+}
+.join_container .l1 input{
+    width: 202px;
+}
+
+.join_container .lc{
+    margin-top: 24px;
+}
+.join_container .lc input{
+    width: 100%;
+}
+.join_container .lc .check{
+    margin-top: 13px;
+}
+.join_container .check{
+    text-align: left;
+}
+.join_container .check label{
+    font-weight: 500;
+    font-size: 18px;
+    color: #62646D;
+}
+.join_container .check input{
+    width: 16px;
+    height: 16px;
+    margin-right: 13px;
+}
+.join_container .check .terms{
+    color: #008D8D;
+}
+
+
+
+.join_container .step_btn{
+    margin-top: 27px;
+}
+.join_container .step_btn a{
+    font-weight: 400;
+    width: 420px;
+    height: 48px;
+    background: #008D8D;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 8px;
+}
